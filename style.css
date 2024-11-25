@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #FFFDD0;
+}
+
+/* El contenido ocupa el 100% del viewport */
+.contenedor {
+    display:grid;
+        min-height: 100dvh;
+        grid-template-rows: 
+            auto 1fr auto;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+#contenedor-producto, #contenedor-productos, #comprar-productos, footer{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #87CEEB;
+}
+
+#contenedor-producto{
+    font-size: 22px;
+}
+
+input, select, label{
+    font-size: 18px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.botones{
+    background-color: chartreuse;
+}
+
+/* Personalizamos los botones */
+.botones, .btn-borrar{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.btn-borrar{
+    background-color:brown;
+}
+
+/* Personalizamos el button a pasar el mouse */
+.botones:hover{
+    background-color: rgb(93, 185, 1);
+    cursor:grab;
+}
+
+.btn-borrar:hover{
+    background-color: rgb(114, 31, 31);;
+    cursor:grab;
+}
+
+/* Estilamos el div donde se muestran todos los productos */
+#all-products{
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilamos el menu desplegable */
+select{
+    font-size: 18px;
+    padding: 10px
+}
+
+footer{
+    text-align: left;
+}

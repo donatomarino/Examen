@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Examen - Donato Marino</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <header>
+            <h1>Examen - Donato Marino</h1>
+        </header>
+    
+        <main>
+            <!-- Mostramos todos los productos -->
+            <div id="contenedor-productos">
+                <button type="submit" class="botones" onclick="sacarTodo()">Mostrar todos los productos</button>
+                <button type="submit" class = "btn-borrar" onclick="quitarProductos()">Borrar</button>
+            </div>
+        
+            <!-- Buscar producto por ID -->
+            <div id="contenedor-producto">
+                <label>Inserta el ID del producto que quieres buscar: </label>
+                <input type="text" name="buscar-producto-por-id" id="ctg" placeholder="Desde 1 a 20">
+                <button type="submit" class="botones" onclick="buscarPorId()">Buscar</button>
+                <button type="submit" class = "btn-borrar" onclick="quitarProducto()">Borrar</button>
+            </div>
+        
+            <!-- Señalamos los productos que queremos añadir al carrito -->
+            <div id="comprar-productos">
+                <label styl>Eliges lo que quieres comprar: </label>
+                <select name="comprarProductos" id="comprar">
+                    <option value="0">Fjallraven </option>
+                    <option value="1">T-Shirts</option>
+                    <option value="2">Cotton Jacket</option>
+                    <option value="3">Casual Slim Fit</option>
+                    <option value="4">Dragon Station</option>
+                    <option value="5">Solid Gold</option>
+                    <option value="6">White Gold</option>
+                    <option value="7">Pierced Owl</option>
+                    <option value="8">Elements Portable</option>
+                    <option value="9">SanDisk SSD</option>
+                </select>
+                <div>
+                    <button type="submit" class = "btn-borrar" onclick="borrarLi()">Borrar ultimo producto</button>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <p>Copyrigth&copy; - Donato Marino</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
